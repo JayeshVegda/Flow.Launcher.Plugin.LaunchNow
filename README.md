@@ -163,8 +163,8 @@ Released under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**Tarik Jaber**
-GitHub: [@yourusername](https://github.com/yourusername/mega-search)
+**Jayesh Vegda**
+GitHub: [@yourusername](https://github.com/JayeshVegda/)
 
 ---
 

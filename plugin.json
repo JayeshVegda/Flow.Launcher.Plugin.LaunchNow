@@ -1,8 +1,8 @@
 {
-    "ID": "2d5036e2-eccc-4254-b88e-de78580e2195",
+    "ID": "5996dc32-30a6-419e-9963-c4aadcf84947",
     "ActionKeyword": "ms",
     "Name": "Mega Search",
-    "Description": "Open groups of tabs and search engines. Edit engines.json to customize.",
+    "Description": "Lightning-fast multi-search plugin that lets you search across dozens of websites with a single command!",
     "Author": "Jayesh Vegda",
     "Version": "1.0.0",
     "Language": "python",

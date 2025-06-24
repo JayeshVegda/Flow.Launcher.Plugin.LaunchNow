@@ -80,20 +80,14 @@ You can also paste this into the Run dialog (`Win + R`) and press Enter.
 Open Command Prompt or PowerShell in the above folder, then run:
 
 ```bash
-git clone https://github.com/yourusername/mega-search
+git clone https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch
 ```
 
 **Option B – Download ZIP:**
 
-1. Visit the GitHub repo: `https://github.com/yourusername/mega-search`
+1. Visit the GitHub repo: `https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch`
 2. Click **Code > Download ZIP**
 3. Extract the ZIP file into the `Plugins` folder
-
-Make sure the folder name becomes:
-
-```
-C:\Users\<YourUsername>\AppData\Roaming\FlowLauncher\Plugins\mega-search
-```
 
 ---
 
@@ -110,10 +104,10 @@ You're all set! 🚀
 
 | Command Format           | Example                           | Result                                   |
 | ------------------------ | --------------------------------- | ---------------------------------------- |
-| `bu`                     | `bu`                              | Lists all available groups               |
-| `bu <group>`             | `bu ai`                           | Opens all AI-related websites            |
-| `bu <group> <query>`     | `bu shopping wireless headphones` | Searches for query on all shopping sites |
-| `bu <site/code> <query>` | `bu yt lofi music`                | Searches YouTube for "lofi music"        |
+| `ms`                     | `ms`                              | Lists all available groups               |
+| `ms <group>`             | `ms ai`                           | Opens all AI-related websites            |
+| `ms <group> <query>`     | `ms shopping wireless headphones` | Searches for query on all shopping sites |
+| `ms <site/code> <query>` | `ms yt lofi music`                | Searches YouTube for "lofi music"        |
 
 > 💡 Tip: Codes are short aliases like `yt` for YouTube, `g` for Google, etc.
 

@@ -1,0 +1,12 @@
+{
+    "ID": "2d5036e2-eccc-4254-b88e-de78580e2195",
+    "ActionKeyword": "ms",
+    "Name": "Mega Search",
+    "Description": "Open groups of tabs and search engines. Edit engines.json to customize.",
+    "Author": "Jayesh Vegda",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch",
+    "IcoPath": "Images\\app.png",
+    "ExecuteFileName": "main.py"
+}

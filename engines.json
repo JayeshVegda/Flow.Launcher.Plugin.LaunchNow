@@ -1,0 +1,99 @@
+{
+  "search": {
+    "name": "Search",
+    "icon": "Images/search/search.png",
+    "websites": [
+      {"name": "Google", "code": "g", "url": "https://www.google.com/search?q={}", "icon": "Images/search/google.png"},
+      {"name": "Bing", "code": "bing", "url": "https://www.bing.com/search?q={}", "icon": "Images/search/bing.png"},
+      {"name": "DuckDuckGo", "code": "ddg", "url": "https://duckduckgo.com/?q={}", "icon": "Images/search/duckduckgo.png"},
+      {"name": "Startpage", "code": "sp", "url": "https://www.startpage.com/sp/search?query={}", "icon": "Images/search/startpage.png"},
+      {"name": "Ecosia", "code": "eco", "url": "https://www.ecosia.org/search?q={}", "icon": "Images/search/ecosia.png"},
+      {"name": "Yandex", "code": "yandex", "url": "https://yandex.com/search/?text={}", "icon": "Images/search/yandex.png"},
+      {"name": "Brave Search", "code": "brave", "url": "https://search.brave.com/search?q={}", "icon": "Images/search/brave.png"}
+    ]
+  },
+  "ai": {
+    "name": "AI",
+    "icon": "Images/ai/ai.png",
+    "websites": [
+      {"name": "ChatGPT", "code": "chatgpt", "url": "https://chat.openai.com/?q={}", "icon": "Images/ai/chatgpt.png"},
+      {"name": "Perplexity", "code": "ppx", "url": "https://www.perplexity.ai/search?q={}", "icon": "Images/ai/perplexity.png"},
+      {"name": "Claude", "code": "claude", "url": "https://claude.ai/new?q={}", "icon": "Images/ai/claude.png"},
+      {"name": "Copilot", "code": "copilot", "url": "https://copilot.microsoft.com/?q={}", "icon": "Images/ai/copilot.png"},
+      {"name": "HuggingChat", "code": "hf", "url": "https://huggingface.co/chat?q={}", "icon": "Images/ai/huggingface.png"},
+      {"name": "Mistral", "code": "mistral", "url": "https://chat.mistral.ai/chat?q={}", "icon": "Images/ai/mistral.png"}
+    ]
+  },
+  "video": {
+    "name": "Video",
+    "icon": "Images/video/video.png",
+    "websites": [
+      {"name": "YouTube", "code": "yt", "url": "https://www.youtube.com/results?search_query={}", "icon": "Images/video/youtube.png"},
+      {"name": "Vimeo", "code": "vimeo", "url": "https://vimeo.com/search?q={}", "icon": "Images/video/vimeo.png"},
+      {"name": "Dailymotion", "code": "dm", "url": "https://www.dailymotion.com/search/{}", "icon": "Images/video/dailymotion.png"}
+    ]
+  },
+  "photo": {
+    "name": "Photo",
+    "icon": "Images/photo/photo.png",
+    "websites": [
+      {"name": "Pinterest", "code": "pin", "url": "https://www.pinterest.com/search/pins/?q={}", "icon": "Images/photo/pinterest.png"},
+      {"name": "Unsplash", "code": "unsplash", "url": "https://unsplash.com/s/photos/{}", "icon": "Images/photo/unsplash.png"},
+      {"name": "Pexels", "code": "pexels", "url": "https://www.pexels.com/search/{}/", "icon": "Images/photo/pexels.png"},
+      {"name": "Pixabay", "code": "pixabay", "url": "https://pixabay.com/images/search/{}", "icon": "Images/photo/pixabay.png"},
+      {"name": "Getty Images", "code": "getty", "url": "https://www.gettyimages.com/photos/{}", "icon": "Images/photo/getty.png"},
+      {"name": "Shutterstock", "code": "ss", "url": "https://www.shutterstock.com/search/{}", "icon": "Images/photo/shutterstock.png"},
+      {"name": "Flickr", "code": "flickr", "url": "https://www.flickr.com/search/?text={}", "icon": "Images/photo/flickr.png"},
+      {"name": "Adobe Stock", "code": "adobe", "url": "https://stock.adobe.com/search?k={}", "icon": "Images/photo/adobe.png"}
+    ]
+  },
+  "shopping": {
+    "name": "Shopping",
+    "icon": "Images/shopping/shopping.png",
+    "websites": [
+      {"name": "Amazon", "code": "amz", "url": "https://www.amazon.com/s?k={}", "icon": "Images/shopping/amazon.png"},
+      {"name": "eBay", "code": "ebay", "url": "https://www.ebay.com/sch/i.html?_nkw={}", "icon": "Images/shopping/ebay.png"},
+      {"name": "Walmart", "code": "walmart", "url": "https://www.walmart.com/search?q={}", "icon": "Images/shopping/walmart.png"},
+      {"name": "AliExpress", "code": "alx", "url": "https://www.aliexpress.com/wholesale?SearchText={}", "icon": "Images/shopping/aliexpress.png"},
+      {"name": "Best Buy", "code": "bb", "url": "https://www.bestbuy.com/site/searchpage.jsp?st={}", "icon": "Images/shopping/bestbuy.png"},
+      {"name": "Target", "code": "target", "url": "https://www.target.com/s?searchTerm={}", "icon": "Images/shopping/target.png"},
+      {"name": "Etsy", "code": "etsy", "url": "https://www.etsy.com/search?q={}", "icon": "Images/shopping/etsy.png"}
+    ]
+  },
+  "social": {
+    "name": "Social",
+    "icon": "Images/social/social.png",
+    "websites": [
+      {"name": "X", "code": "x", "url": "https://x.com/search?q={}&f=user", "icon": "Images/social/x.png"},
+      {"name": "Facebook", "code": "fb", "url": "https://www.facebook.com/search/top/?q={}", "icon": "Images/social/facebook.png"},
+      {"name": "Instagram", "code": "ig", "url": "https://www.instagram.com/explore/tags/{}/", "icon": "Images/social/instagram.png"},
+      {"name": "Reddit", "code": "reddit", "url": "https://www.reddit.com/search/?q={}", "icon": "Images/social/reddit.png"},
+      {"name": "LinkedIn", "code": "li", "url": "https://www.linkedin.com/search/results/all/?keywords={}", "icon": "Images/social/linkedin.png"},
+      {"name": "Pinterest", "code": "pin", "url": "https://www.pinterest.com/search/pins/?q={}", "icon": "Images/social/pinterest.png"}
+    ]
+  },
+  "news": {
+    "name": "News & Media",
+    "icon": "Images/news/news.png",
+    "websites": [
+      {"name": "Google News", "code": "gn", "url": "https://news.google.com/search?q={}", "icon": "Images/news/googlenews.png"},
+      {"name": "BBC News", "code": "bbc", "url": "https://www.bbc.co.uk/search?q={}", "icon": "Images/news/bbc.png"},
+      {"name": "CNN", "code": "cnn", "url": "https://edition.cnn.com/search?q={}", "icon": "Images/news/cnn.png"},
+      {"name": "Reuters", "code": "reuters", "url": "https://www.reuters.com/search/news?blob={}", "icon": "Images/news/reuters.png"},
+      {"name": "The Guardian", "code": "guardian", "url": "https://www.theguardian.com/uk/{}", "icon": "Images/news/guardian.png"},
+      {"name": "New York Times", "code": "nyt", "url": "https://www.nytimes.com/search?query={}", "icon": "Images/news/nyt.png"},
+      {"name": "Al Jazeera", "code": "aj", "url": "https://www.aljazeera.com/search/{}", "icon": "Images/news/aljazeera.png"}
+    ]
+  },
+  "stock": {
+    "name": "Finance",
+    "icon": "Images/finance/finance.png",
+    "websites": [
+      {"name": "Yahoo Finance", "code": "yf", "url": "https://finance.yahoo.com/quote/{}", "icon": "Images/finance/yahoo.png"},
+      {"name": "Google Finance", "code": "gf", "url": "https://www.google.com/finance/quote/{}", "icon": "Images/finance/googlefinance.png"},
+      {"name": "TradingView", "code": "tv", "url": "https://www.tradingview.com/chart/?symbol={}", "icon": "Images/finance/tradingview.png"},
+      {"name": "Moneycontrol", "code": "mc", "url": "https://www.moneycontrol.com/india/stockpricequote/{}", "icon": "Images/finance/moneycontrol.png"},
+      {"name": "NSE India", "code": "nse", "url": "https://www.nseindia.com/get-quotes/equity?symbol={}", "icon": "Images/finance/nse.png"}
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+* text=auto
+*.py linguist-language=Python
+*.json linguist-language=JSON
+*.md linguist-language=Markdown 

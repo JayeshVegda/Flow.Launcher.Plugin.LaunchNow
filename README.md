@@ -1,42 +1,102 @@
-# Mega Search
 
-[![GitHub release](https://img.shields.io/github/v/release/yourusername/mega-search?style=flat-square)](https://github.com/yourusername/mega-search/releases)
-[![Issues](https://img.shields.io/github/issues/yourusername/mega-search?style=flat-square)](https://github.com/yourusername/mega-search/issues)
-[![License](https://img.shields.io/github/license/yourusername/mega-search?style=flat-square)](LICENSE)
+<p align="center">
+  <img src="Images/app.png" alt="Mega Search Logo" width="100" height="100" />
+</p>
+
+<h1 align="center">Mega Search</h1>
+<h3 align="center">Search Smarter. Search Everywhere.</h3>
+
+<p align="center">
+  <!-- Core Badges -->
+  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/releases">
+    <img src="https://img.shields.io/github/v/release/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=blue" alt="GitHub release">
+  </a>
+  <a href="https://python.org">
+    <img src="https://img.shields.io/badge/python-3.7+-blue?style=for-the-badge&logo=python" alt="Python Version">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge" alt="License">
+  </a>
+  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/releases">
+    <img src="https://img.shields.io/github/downloads/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/total?style=for-the-badge&color=success" alt="Downloads">
+  </a>
+  <!-- Optional/Extra Badges -->
+  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/stargazers">
+    <img src="https://img.shields.io/github/stars/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=yellow" alt="Stars">
+  </a>
+  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/issues">
+    <img src="https://img.shields.io/github/issues/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=orange" alt="Issues">
+  </a>
+</p>
+
+<p align="center">
+  🚀 <em>A powerful Flow Launcher plugin that opens multiple search engines or websites with one command.</em><br>
+  <em>Group your favorite platforms, customize your shortcuts, and supercharge your search experience.</em>
+</p>
 
 ---
 
-**Mega Search** is a Flow Launcher plugin that lets you search or open multiple websites and search engines at once. Configure your favorite engines and groups in a single JSON file, and use short codes or names for instant access.
 
-## Features
+## 📆 Features
 
-- Open multiple tabs with one command
-- Search across groups (e.g., all AI engines, all shopping sites)
-- Direct search on a specific website (by name or code)
-- Easy configuration via `engines.json`
-- Custom icons for each engine/site
-- Fast, lightweight, and extensible (Python)
+* 🔗 **Multi-tab search** — Open all sites in a group at once.
+* 🎯 **Targeted engine search** — Search specific websites via short codes or names.
+* 🧹 **Group-based control** — Organize engines by category like `AI`, `Shopping`, `Video`, etc.
+* ✍️ **Simple JSON config** — Easily modify engines and groups.
+* 🎨 **Custom icons** — Set personalized logos for visual recognition.
+* ⚡ **Built with Python** — Lightweight, fast, and fully extensible.
 
-## Installation
+---
 
-1. Download or clone this repository into your Flow Launcher plugins directory.
-2. Ensure you have Python 3.7+ installed.
-3. Install dependencies:
-   ```sh
+## 🚀 Installation Guide
+
+### ✅ Prerequisites
+
+* [Flow Launcher](https://www.flowlauncher.com/) installed
+* Python 3.7+
+
+### 📁 Steps
+
+1. **Clone or download** this repository into Flow Launcher's plugin directory:
+
+   ```bash
+   git clone https://github.com/yourusername/mega-search
+   ```
+
+2. **Navigate** to the plugin folder:
+
+   ```bash
+   cd mega-search
+   ```
+
+3. **Install Python dependencies**:
+
+   ```bash
    pip install -r requirements.txt
    ```
-4. (Re)start Flow Launcher. Use the action keyword (default: `bu`).
 
-## Usage
+4. **Restart Flow Launcher**.
 
-- Show all groups: `bu`
-- Search a group: `bu <group> <query>` (e.g., `bu ai python tutorial`)
-- Search a specific site: `bu <sitename|code> <query>` (e.g., `bu google cats` or `bu yt cats`)
-- Open all sites in a group (no search): `bu <group>`
+---
 
-## Configuration
+## ⚙️ Usage
 
-All engines and groups are defined in `engines.json` in the plugin directory. Example:
+### 🔑 Default Keyword: `bu`
+
+| Command Format           | Example                           | Result                                   |
+| ------------------------ | --------------------------------- | ---------------------------------------- |
+| `bu`                     | `bu`                              | Lists all available groups               |
+| `bu <group>`             | `bu ai`                           | Opens all AI-related websites            |
+| `bu <group> <query>`     | `bu shopping wireless headphones` | Searches for query on all shopping sites |
+| `bu <site/code> <query>` | `bu yt lofi music`                | Searches YouTube for "lofi music"        |
+
+> 💡 Tip: Codes are short aliases like `yt` for YouTube, `g` for Google, etc.
+
+---
+
+## 🔄 Configuration
+
+All configuration is stored in `engines.json`. Here’s an example:
 
 ```json
 {
@@ -44,32 +104,68 @@ All engines and groups are defined in `engines.json` in the plugin directory. Ex
     "name": "Search",
     "icon": "Images/search/search.png",
     "websites": [
-      {"name": "Google", "code": "g", "url": "https://www.google.com/search?q={}", "icon": "Images/search/google.png"},
-      {"name": "Bing", "code": "bing", "url": "https://www.bing.com/search?q={}", "icon": "Images/search/bing.png"}
+      {
+        "name": "Google",
+        "code": "g",
+        "url": "https://www.google.com/search?q={}",
+        "icon": "Images/search/google.png"
+      },
+      {
+        "name": "YouTube",
+        "code": "yt",
+        "url": "https://www.youtube.com/results?search_query={}",
+        "icon": "Images/video/youtube.png"
+      }
     ]
   },
-  ...
+  "ai": {
+    "name": "AI Engines",
+    "icon": "Images/ai/ai.png",
+    "websites": [
+      {
+        "name": "ChatGPT",
+        "code": "chatgpt",
+        "url": "https://chat.openai.com/?q={}",
+        "icon": "Images/ai/chatgpt.png"
+      }
+    ]
+  }
 }
 ```
 
-- Add a new group: Copy the structure above and add your own group key.
-- Add a new website: Add a new object to the `websites` array in the relevant group.
-- URL format: Use `{}` as the placeholder for the search term.
-- Icons: Place your PNG icon in the appropriate `Images/` subfolder and reference its path.
-- Code: Add a short, memorable code for each website for quick access.
+### ✅ Configuration Tips
 
-## Contributing
-
-Pull requests and suggestions are welcome! Please:
-- Keep code clean and well-documented
-- Update `engines.json` and icons as needed
-- Test your changes before submitting
-
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
+* Use `{}` as the placeholder for the query string.
+* Place icons in their respective folders (e.g. `Images/ai/`, `Images/search/`).
+* Codes should be short and easy to remember.
+* Group similar websites under categories like `search`, `shopping`, `video`, `ai`, etc.
 
 ---
 
-**Author:** Tarik Jaber  
-**GitHub:** [Mega Search](https://github.com/yourusername/mega-search)
+## 🤝 Contributing
+
+Pull requests and feature suggestions are welcome!
+
+Please:
+
+* Keep the code clean and readable
+* Follow the structure in `engines.json`
+* Add icons for new sites
+* Test before submitting your changes
+
+---
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+**Tarik Jaber**
+GitHub: [@yourusername](https://github.com/yourusername/mega-search)
+
+---
+
+> Made with ❤️ to make your web searching blazing fast.

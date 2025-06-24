@@ -57,27 +57,52 @@
 
 ### 📁 Steps
 
-1. **Clone or download** this repository into Flow Launcher's plugin directory:
-
-   ```bash
-   git clone https://github.com/yourusername/mega-search
-   ```
-
-2. **Navigate** to the plugin folder:
-
-   ```bash
-   cd mega-search
-   ```
-
-3. **Install Python dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Restart Flow Launcher**.
+Follow these steps to install the Mega Search plugin manually in Flow Launcher:
 
 ---
+
+### 1. 📂 Open the Plugin Directory
+
+Open the following path in File Explorer:
+
+```
+C:\Users\<YourUsername>\AppData\Roaming\FlowLauncher\Plugins
+```
+
+You can also paste this into the Run dialog (`Win + R`) and press Enter.
+
+---
+
+### 2. 📥 Download or Clone the Repository
+
+**Option A – Clone using Git (recommended):**
+
+Open Command Prompt or PowerShell in the above folder, then run:
+
+```bash
+git clone https://github.com/yourusername/mega-search
+```
+
+**Option B – Download ZIP:**
+
+1. Visit the GitHub repo: `https://github.com/yourusername/mega-search`
+2. Click **Code > Download ZIP**
+3. Extract the ZIP file into the `Plugins` folder
+
+Make sure the folder name becomes:
+
+```
+C:\Users\<YourUsername>\AppData\Roaming\FlowLauncher\Plugins\mega-search
+```
+
+---
+
+### 3. 🔁 Restart Flow Launcher
+
+Close and reopen Flow Launcher to load the plugin.
+
+You're all set! 🚀
+
 
 ## ⚙️ Usage
 

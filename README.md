@@ -1,190 +1,224 @@
-
 <p align="center">
   <img src="Images/app.png" alt="Mega Search Logo" width="100" height="100" />
 </p>
 
-<h1 align="center">Mega Search</h1>
-<h3 align="center">Search Smarter. Search Everywhere.</h3>
+<h1 align="center">Mega Web Search
+<br> Search Smarter. Search Everywhere.</h1>
 
 <p align="center">
-  <!-- Core Badges -->
   <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/releases">
-    <img src="https://img.shields.io/github/v/release/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=blue" alt="GitHub release">
+    <img src="https://img.shields.io/github/v/release/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=blue" alt="Latest Release">
   </a>
-  <a href="https://python.org">
-    <img src="https://img.shields.io/badge/python-3.7+-blue?style=for-the-badge&logo=python" alt="Python Version">
+  <a href="https://www.python.org">
+    <img src="https://img.shields.io/badge/Python-3.7%2B-yellow?style=for-the-badge&logo=python&logoColor=white" alt="Python Version">
   </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/github/license/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=lightgrey" alt="License">
   </a>
   <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/releases">
-    <img src="https://img.shields.io/github/downloads/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/total?style=for-the-badge&color=success" alt="Downloads">
-  </a>
-  <!-- Optional/Extra Badges -->
-  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/stargazers">
-    <img src="https://img.shields.io/github/stars/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=yellow" alt="Stars">
-  </a>
-  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/issues">
-    <img src="https://img.shields.io/github/issues/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=orange" alt="Issues">
+    <img src="https://img.shields.io/github/downloads/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/total?style=for-the-badge&color=success" alt="Total Downloads">
   </a>
 </p>
+
+---
 
 <p align="center">
-  🚀 <em>A powerful Flow Launcher plugin that opens multiple search engines or websites with one command.</em><br>
-  <em>Group your favorite platforms, customize your shortcuts, and supercharge your search experience.</em>
+  🚀 <strong>Mega Web Search</strong> is a powerful Flow Launcher plugin that lets you open multiple websites at once using a single keyword.<br>
+  Define search groups, customize your engines, and boost your productivity with one quick command.
 </p>
 
----
-
-
-## 📆 Features
-
-* 🔗 **Multi-tab search** — Open all sites in a group at once.
-* 🎯 **Targeted engine search** — Search specific websites via short codes or names.
-* 🧹 **Group-based control** — Organize engines by category like `AI`, `Shopping`, `Video`, etc.
-* ✍️ **Simple JSON config** — Easily modify engines and groups.
-* 🎨 **Custom icons** — Set personalized logos for visual recognition.
-* ⚡ **Built with Python** — Lightweight, fast, and fully extensible.
 
 ---
 
-## 🚀 Installation Guide
+## 🎯 Quick Start
 
-### ✅ Prerequisites
+**Basic Usage:**
+- Type `ms` → See all available groups
+- Type `ms ai hello world` → Search "hello world" on all AI platforms
+- Type `ms yt lofi music` → Search YouTube for "lofi music"
 
-* [Flow Launcher](https://www.flowlauncher.com/) installed
-* Python 3.7+
-
-### 📁 Steps
-
-Follow these steps to install the Mega Search plugin manually in Flow Launcher:
-
----
-
-### 1. 📂 Open the Plugin Directory
-
-Open the following path in File Explorer:
-
-```
-C:\Users\<YourUsername>\AppData\Roaming\FlowLauncher\Plugins
-```
-
-You can also paste this into the Run dialog (`Win + R`) and press Enter.
+What makes it special : <br>
+✨ Open multiple websites at once  <br>
+⚡ Custom shortcuts for every site   <br>
+🎨 Visual icons for easy recognition   <br>
+🔧 Simple JSON configuration  <br>
 
 ---
 
-### 2. 📥 Download or Clone the Repository
+## 📋 Table of Contents
 
-**Option A – Clone using Git (recommended):**
-
-Open Command Prompt or PowerShell in the above folder, then run:
-
-```bash
-git clone https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch
-```
-
-**Option B – Download ZIP:**
-
-1. Visit the GitHub repo: `https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch`
-2. Click **Code > Download ZIP**
-3. Extract the ZIP file into the `Plugins` folder
+- [🚀 Installation](#-installation)
+- [💡 How to Use](#-how-to-use)
+- [⚙️ Configuration](#️-configuration)
+- [📚 Examples](#-examples)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
-### 3. 🔁 Restart Flow Launcher
+## 🚀 Installation
 
-Close and reopen Flow Launcher to load the plugin.
+<details>
+<summary><strong>📋 Prerequisites</strong></summary>
 
-You're all set! 🚀
+Before installing, make sure you have:
+- [Flow Launcher](https://www.flowlauncher.com/) installed and running
+- Python 3.7 or higher
 
+</details>
 
-## ⚙️ Usage
+<details>
+<summary><strong>📥 Method 1: Download from Releases (Recommended)</strong></summary>
 
-### 🔑 Default Keyword: `bu`
+1. Go to [Releases](https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/releases)
+2. Download the latest `.zip` file
+3. Extract to: `C:\Users\<YourUsername>\AppData\Roaming\FlowLauncher\Plugins`
+4. Restart Flow Launcher
 
-| Command Format           | Example                           | Result                                   |
-| ------------------------ | --------------------------------- | ---------------------------------------- |
-| `ms`                     | `ms`                              | Lists all available groups               |
-| `ms <group>`             | `ms ai`                           | Opens all AI-related websites            |
-| `ms <group> <query>`     | `ms shopping wireless headphones` | Searches for query on all shopping sites |
-| `ms <site/code> <query>` | `ms yt lofi music`                | Searches YouTube for "lofi music"        |
+</details>
 
-> 💡 Tip: Codes are short aliases like `yt` for YouTube, `g` for Google, etc.
+<details>
+<summary><strong>🔧 Method 2: Manual Installation</strong></summary>
+
+1. **Open Plugin Directory:**
+   ```
+   C:\Users\<YourUsername>\AppData\Roaming\FlowLauncher\Plugins
+   ```
+
+2. **Clone Repository:**
+   ```bash
+   git clone https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch
+   ```
+
+3. **Restart Flow Launcher**
+
+</details>
 
 ---
 
-## 🔄 Configuration
+## 💡 How to Use
 
-All configuration is stored in `engines.json`. Here’s an example:
+### Basic Commands
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `ms` | Show all available groups | `ms` to display all search groups |
+| `ms <group>` | Open all sites in group | `ms ai` to open all AI platforms |
+| `ms <group> <query>` | Search query on all group sites | `ms shopping wireless headphones` to search all shopping sites |
+| `ms <code> <query>` | Search specific site using short code | `ms yt lofi music` to search YouTube |
+| `ms <site_name> <query>` | Search specific site using full name | `ms google flow launcher` to search Google |
+
+---
+
+## ⚙️ Configuration
+
+<details>
+<summary><strong>📝 Basic Configuration</strong></summary>
+
+All settings are in `engines.json`. Here's the structure:
 
 ```json
 {
-  "search": {
-    "name": "Search",
-    "icon": "Images/search/search.png",
+  "groupName": {
+    "name": "Display Name",
+    "icon": "path/to/icon.png",
     "websites": [
       {
-        "name": "Google",
-        "code": "g",
-        "url": "https://www.google.com/search?q={}",
-        "icon": "Images/search/google.png"
-      },
-      {
-        "name": "YouTube",
-        "code": "yt",
-        "url": "https://www.youtube.com/results?search_query={}",
-        "icon": "Images/video/youtube.png"
-      }
-    ]
-  },
-  "ai": {
-    "name": "AI Engines",
-    "icon": "Images/ai/ai.png",
-    "websites": [
-      {
-        "name": "ChatGPT",
-        "code": "chatgpt",
-        "url": "https://chat.openai.com/?q={}",
-        "icon": "Images/ai/chatgpt.png"
+        "name": "Site Name",
+        "code": "short-code",
+        "url": "https://example.com/search?q={}",
+        "icon": "path/to/site-icon.png"
       }
     ]
   }
 }
 ```
 
-### ✅ Configuration Tips
+**Key Points:**
+- Use `{}` where the search query should go
+- Keep codes short and memorable
+- Icons should be in the `Images/` folder
 
-* Use `{}` as the placeholder for the query string.
-* Place icons in their respective folders (e.g. `Images/ai/`, `Images/search/`).
-* Codes should be short and easy to remember.
-* Group similar websites under categories like `search`, `shopping`, `video`, `ai`, etc.
+</details>
+
+---
+
+## 📚 Examples
+
+<details>
+<summary><strong>🔍 Search Examples</strong></summary>
+
+```
+ms g python tutorial          → Google search
+ms yt python course          → YouTube search  
+ms ai explain recursion      → Search all AI platforms
+ms shopping wireless mouse   → Search all shopping sites
+```
+
+</details>
+
+<details>
+<summary><strong>⚡ Quick Actions</strong></summary>
+
+```
+ms                    → See all available groups
+ms ai                 → Open all AI platforms (no search)
+ms video             → Open all video platforms  
+ms shopping          → Open all shopping sites
+```
+
+</details>
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests and feature suggestions are welcome!
+We welcome contributions! Here's how to help:
 
-Please:
+<details>
+<summary><strong>🐛 Reporting Issues</strong></summary>
 
-* Keep the code clean and readable
-* Follow the structure in `engines.json`
-* Add icons for new sites
-* Test before submitting your changes
+Found a bug? Please include:
+- Your Flow Launcher version
+- Steps to reproduce the issue
+- Expected vs actual behavior
+- Screenshots if helpful
+
+</details>
+
+<details>
+<summary><strong>✨ Adding Features</strong></summary>
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+**Guidelines:**
+- Keep code clean and documented
+- Follow existing patterns in `engines.json`
+- Include icons for new sites
+- Update README if needed
+
+</details>
 
 ---
 
 ## 📄 License
 
-Released under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 👨‍💻 Author
 
-**Jayesh Vegda**
-GitHub: [@yourusername](https://github.com/JayeshVegda/)
+GitHub: [@JayeshVegda](https://github.com/JayeshVegda/)
 
 ---
 
-> Made with ❤️ to make your web searching blazing fast.
+<p align="center">
+  <strong>⭐ If you find this plugin helpful, please give it a star!</strong><br>
+  <em>Made with ❤️ to make your web searching blazing fast.</em>
+</p>
+</p>

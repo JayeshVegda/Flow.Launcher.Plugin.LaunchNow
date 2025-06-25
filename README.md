@@ -2,7 +2,7 @@
   <img src="Images/app.png" alt="Mega Search Logo" width="100" height="100" />
 </p>
 
-<h1 align="center">Mega Web Search
+<h1 align="center">LaunchNow 
 <br> Search Smarter. Search Everywhere.</h1>
 
 <p align="center">
@@ -23,7 +23,7 @@
 ---
 
 <p align="center">
-  🚀 <strong>Mega Web Search</strong> is a powerful Flow Launcher plugin that lets you open multiple websites at once using a single keyword.<br>
+  🚀 <strong>LaunchNow </strong> is a powerful Flow Launcher plugin that lets you open multiple websites at once using a single keyword.<br>
   Define search groups, customize your engines, and boost your productivity with one quick command.
 </p>
 
@@ -33,9 +33,9 @@
 ## 🎯 Quick Start
 
 **Basic Usage:**
-- Type `ms` → See all available groups
-- Type `ms ai hello world` → Search "hello world" on all AI platforms
-- Type `ms yt lofi music` → Search YouTube for "lofi music"
+- Type `ln` → See all available groups
+- Type `ln ai hello world` → Search "hello world" on all AI platforms
+- Type `ln yt lofi music` → Search YouTube for "lofi music"
 
 What makes it special : <br>
 ✨ Open multiple websites at once  <br>
@@ -70,7 +70,7 @@ Before installing, make sure you have:
 <details>
 <summary><strong>📥 Method 1: Download from Releases (Recommended)</strong></summary>
 
-1. Go to [Releases](https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/releases)
+1. Go to [Releases](https://github.com/JayeshVegda/Flow.Launcher.Plugin.LaunchNow/releases)
 2. Download the latest `.zip` file
 3. Extract to: `C:\Users\<YourUsername>\AppData\Roaming\FlowLauncher\Plugins`
 4. Restart Flow Launcher
@@ -87,7 +87,7 @@ Before installing, make sure you have:
 
 2. **Clone Repository:**
    ```bash
-   git clone https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch
+   git clone https://github.com/JayeshVegda/Flow.Launcher.Plugin.LaunchNow
    ```
 
 3. **Restart Flow Launcher**
@@ -102,12 +102,12 @@ Before installing, make sure you have:
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `ms` | Show all available groups | `ms` to display all search groups |
-| `ms <group>` | Open all sites in group | `ms ai` to open all AI platforms |
-| `ms <group> <query>` | Search query on all group sites | `ms shopping wireless headphones` to search all shopping sites |
-| `ms <code> <query>` | Search specific site using short code | `ms yt lofi music` to search YouTube |
-| `ms <site_name> <query>` | Search specific site using full name | `ms google flow launcher` to search Google |
-| `ms config` | Open the configuration file (`engines.json`) | `ms config` |
+| `ln` | Show all available groups | `ln` to display all search groups |
+| `ln <group>` | Open all sites in group | `ln ai` to open all AI platforms |
+| `ln <group> <query>` | Search query on all group sites | `ln shopping wireless headphones` to search all shopping sites |
+| `ln <code> <query>` | Search specific site using short code | `ln yt lofi music` to search YouTube |
+| `ln <site_name> <query>` | Search specific site using full name | `ln google flow launcher` to search Google |
+| `ln config` | Open the configuration file (`engines.json`) | `ln config` |
 
 
 ---
@@ -151,10 +151,10 @@ All settings are in `engines.json`. Here's the structure:
 <summary><strong>🔍 Search Examples</strong></summary>
 
 ```
-ms g python tutorial          → Google search
-ms yt python course          → YouTube search  
-ms ai explain recursion      → Search all AI platforms
-ms shopping wireless mouse   → Search all shopping sites
+ln g python tutorial          → Google search
+ln yt python course          → YouTube search  
+ln ai explain recursion      → Search all AI platforms
+ln shopping wireless mouse   → Search all shopping sites
 ```
 
 </details>
@@ -163,10 +163,10 @@ ms shopping wireless mouse   → Search all shopping sites
 <summary><strong>⚡ Quick Actions</strong></summary>
 
 ```
-ms                    → See all available groups
-ms ai                 → Open all AI platforms (no search)
-ms video             → Open all video platforms  
-ms shopping          → Open all shopping sites
+ln                    → See all available groups
+ln ai                 → Open all AI platforms (no search)
+ln video             → Open all video platforms  
+ln shopping          → Open all shopping sites
 ```
 
 </details>

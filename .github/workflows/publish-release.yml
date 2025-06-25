@@ -22,12 +22,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt -t ./lib
         pip install flowlauncher -t ./lib
-        Compress-Archive -Path * -DestinationPath Flow.Launcher.Plugin.MegaSearch.zip -Force
+        Compress-Archive -Path * -DestinationPath Flow.Launcher.Plugin.LaunchNow.zip -Force
         
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
-        files: 'Flow.Launcher.Plugin.MegaSearch.zip'
+        files: 'Flow.Launcher.Plugin.LaunchNow.zip'
         generate_release_notes: true
         tag_name: v1.0.0
         name: Release v1.0.0

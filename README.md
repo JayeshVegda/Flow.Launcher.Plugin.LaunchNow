@@ -107,6 +107,8 @@ Before installing, make sure you have:
 | `ms <group> <query>` | Search query on all group sites | `ms shopping wireless headphones` to search all shopping sites |
 | `ms <code> <query>` | Search specific site using short code | `ms yt lofi music` to search YouTube |
 | `ms <site_name> <query>` | Search specific site using full name | `ms google flow launcher` to search Google |
+| `ms config` | Open the configuration file (`engines.json`) | `ms config` |
+
 
 ---
 

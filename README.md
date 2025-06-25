@@ -6,17 +6,17 @@
 <br> Search Smarter. Search Everywhere.</h1>
 
 <p align="center">
-  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/releases">
-    <img src="https://img.shields.io/github/v/release/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=blue" alt="Latest Release">
+  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.LaunchNow/releases">
+    <img src="https://img.shields.io/github/v/release/JayeshVegda/Flow.Launcher.Plugin.LaunchNow?style=for-the-badge&color=blue" alt="Latest Release">
   </a>
   <a href="https://www.python.org">
     <img src="https://img.shields.io/badge/Python-3.7%2B-yellow?style=for-the-badge&logo=python&logoColor=white" alt="Python Version">
   </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/JayeshVegda/Flow.Launcher.Plugin.MegaSearch?style=for-the-badge&color=lightgrey" alt="License">
+    <img src="https://img.shields.io/github/license/JayeshVegda/Flow.Launcher.Plugin.LaunchNow?style=for-the-badge&color=lightgrey" alt="License">
   </a>
-  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/releases">
-    <img src="https://img.shields.io/github/downloads/JayeshVegda/Flow.Launcher.Plugin.MegaSearch/total?style=for-the-badge&color=success" alt="Total Downloads">
+  <a href="https://github.com/JayeshVegda/Flow.Launcher.Plugin.LaunchNow/releases">
+    <img src="https://img.shields.io/github/downloads/JayeshVegda/Flow.Launcher.Plugin.LaunchNow/total?style=for-the-badge&color=success" alt="Total Downloads">
   </a>
 </p>
 

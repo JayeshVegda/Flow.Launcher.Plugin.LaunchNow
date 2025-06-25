@@ -1,12 +1,12 @@
 {
-    "ID": "5996dc32-30a6-419e-9963-c4aadcf84947",
-    "ActionKeyword": "ms",
-    "Name": "Mega Web Search",
+    "ID": "cb95613a-626f-4153-9c21-b1f7ea3bcf37",
+    "ActionKeyword": "ln",
+    "Name": "LaunchNow",
     "Description": "Lightning-fast multi-search plugin that lets you search across dozens of websites with a single command!",
     "Author": "Jayesh Vegda",
     "Version": "1.0.0",
     "Language": "python",
-    "Website": "https://github.com/JayeshVegda/Flow.Launcher.Plugin.MegaSearch",
+    "Website": "https://github.com/JayeshVegda/Flow.Launcher.Plugin.LaunchNow",
     "IcoPath": "Images\\app.png",
     "ExecuteFileName": "main.py"
 }

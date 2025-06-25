@@ -47,9 +47,9 @@
       {"name": "Adobe Stock", "code": "adobe", "url": "https://stock.adobe.com/search?k={}", "icon": "Images/photo/adobe.png"}
     ]
   },
-  "shopping": {
+  "shop": {
     "name": "Shopping",
-    "icon": "Images/shopping/shopping.png",
+    "icon": "Images/shopping/shop.png",
     "websites": [
       {"name": "Amazon", "code": "amz", "url": "https://www.amazon.com/s?k={}", "icon": "Images/shopping/amazon.png"},
       {"name": "eBay", "code": "ebay", "url": "https://www.ebay.com/sch/i.html?_nkw={}", "icon": "Images/shopping/ebay.png"},

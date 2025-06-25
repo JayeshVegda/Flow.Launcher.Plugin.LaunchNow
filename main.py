@@ -3,6 +3,8 @@ import sys
 import json
 import re
 import webbrowser
+import subprocess
+import os
 from pathlib import Path
 from flowlauncher import FlowLauncher
 
@@ -33,10 +35,40 @@ class TabOpener(FlowLauncher):
             self.engines = {}
             self.website_name_map = {}
 
+    def safe_format_url(self, url_template, search_query):
+        """Safely format URL template with search query, handling both {q} and {} placeholders"""
+        try:
+            # First try with named parameter {q}
+            if '{q}' in url_template:
+                return url_template.format(q=search_query)
+            # Then try with positional parameter {}
+            elif '{}' in url_template:
+                return url_template.format(search_query)
+            else:
+                # If no placeholder found, return as is
+                return url_template
+        except Exception:
+            # If formatting fails, return the template as is
+            return url_template
+
     def query(self, query):
         q = query.strip()
         results = []
         default_icon = 'Images/app.png'
+        
+        # Configuration command - check this first
+        if q.lower() == 'config':
+            results.append({
+                "Title": "Edit Configuration",
+                "SubTitle": "Open engines.json file for editing. Add, remove, or modify search engines and their codes.",
+                "IcoPath": default_icon,
+                "JsonRPCAction": {
+                    "method": "open_config",
+                    "parameters": []
+                }
+            })
+            return results
+        
         if not self.engines:
             results.append({
                 "Title": "Configuration Error",
@@ -58,7 +90,7 @@ class TabOpener(FlowLauncher):
                         site_preview += f', +{len(site_names)-3} more'
                     title = f"{group_name} ({count} sites)"
                     subtitle = site_preview
-                    urls = [w.get('url', '').format('') for w in group.get('websites', [])]
+                    urls = [self.safe_format_url(w.get('url', ''), '') for w in group.get('websites', [])]
                     results.append({
                         "Title": title,
                         "SubTitle": subtitle,
@@ -76,7 +108,7 @@ class TabOpener(FlowLauncher):
                     codeword = w.get('code', '')
                     title = name
                     icon = w.get('icon', group.get('icon', default_icon))
-                    url = w.get('url', '').format('')
+                    url = self.safe_format_url(w.get('url', ''), '')
                     subtitle = f"Direct search on {name} ({codeword})" if codeword else f"Direct search on {name}"
                     matched_sites.append({
                         "Title": title,
@@ -112,7 +144,7 @@ class TabOpener(FlowLauncher):
             # Check if code matches a website name
             if code in self.website_name_map:
                 code_, w, group = self.website_name_map[code]
-                url = w.get('url', '').format(search_query)
+                url = self.safe_format_url(w.get('url', ''), search_query)
                 icon = w.get('icon', group.get('icon', default_icon))
                 name = w.get('name', code)
                 codeword = w.get('code', '')
@@ -131,7 +163,7 @@ class TabOpener(FlowLauncher):
             # Otherwise, check if code matches a group
             group = self.engines.get(code)
             if group and 'websites' in group:
-                urls = [w.get('url', '').format(search_query) for w in group['websites']]
+                urls = [self.safe_format_url(w.get('url', ''), search_query) for w in group['websites']]
                 icon = group.get('icon', default_icon)
                 results.append({
                     "Title": f"{group.get('name', code.capitalize())} - Search '{search_query}'",
@@ -143,7 +175,7 @@ class TabOpener(FlowLauncher):
                     }
                 })
                 for w in group['websites']:
-                    url = w.get('url', '').format(search_query)
+                    url = self.safe_format_url(w.get('url', ''), search_query)
                     icon = w.get('icon', group.get('icon', default_icon))
                     name = w.get('name', code)
                     codeword = w.get('code', '')
@@ -167,7 +199,7 @@ class TabOpener(FlowLauncher):
         else:
             results.append({
                 "Title": "Invalid format.",
-                "SubTitle": "Use: <code> <query>",
+                "SubTitle": "Use: <code> <query> or 'config' to edit configuration",
                 "IcoPath": default_icon
             })
         return results
@@ -178,6 +210,20 @@ class TabOpener(FlowLauncher):
     def open_tabs(self, urls):
         for url in urls:
             webbrowser.open(url)
+
+    def open_config(self):
+        """Open the engines.json configuration file in the default text editor"""
+        try:
+            if os.name == 'nt':  # Windows
+                os.startfile(str(self.config_file))
+            elif os.name == 'posix':  # macOS and Linux
+                subprocess.run(['xdg-open', str(self.config_file)], check=True)
+            else:
+                # Fallback for other systems
+                subprocess.run(['notepad', str(self.config_file)], check=True)
+        except Exception as e:
+            # If opening fails, try to copy the file path to clipboard or show error
+            print(f"Error opening config file: {e}")
 
 if __name__ == "__main__":
     TabOpener()
